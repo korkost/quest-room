@@ -1,6 +1,6 @@
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 import { Icon } from 'leaflet';
-import { Location } from 'src/utils/const';
+import { Location } from '../../utils/const';
 import DefaultPin from '../../assets/img/icon-blip.svg';
 import 'leaflet/dist/leaflet.css';
 import * as S from './map.styled';

@@ -7,8 +7,8 @@ import {
   PageSubtext,
 } from '../../components/common/common';
 
-import { useAppSelector } from 'src/hooks/hooks';
-import { selectCurrentQuests } from 'src/store/quests-slice/quests-slice';
+import { useAppSelector } from '../../hooks/hooks';
+import { selectCurrentQuests } from '../../store/quests-slice/quests-slice';
 
 import * as S from './home.styled';
 

@@ -1,6 +1,6 @@
 import { image, name, datatype, lorem, phone } from 'faker';
-import { Quest } from 'src/types/quest';
-import { Order } from 'src/types/order';
+import { Quest } from '../types/quest';
+import { Order } from '../types/order';
 
 export const mockQuest: Quest = {
   id: 123,

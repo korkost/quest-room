@@ -5,7 +5,7 @@ import NotFound from '../not-found/not-found';
 import {
   useAppDispatch,
   useAppSelector
-} from 'src/hooks/hooks';
+} from '../../hooks/hooks';
 import QuestModal from '../../components/quest-modal/quest-modal';
 import { MainLayout } from '../../components/common/common';
 import {
@@ -16,13 +16,13 @@ import {
 import {
   selectChangePopupСondition,
   changePopupCondition,
-} from 'src/store/app-slice/app-slice';
+} from '../../store/app-slice/app-slice';
 
 import {
   adaptGenreTypeForClient,
   adaptLevelNameForClient,
-} from 'src/utils/utils';
-import { FetchStatus } from 'src/utils/const';
+} from '../../utils/utils';
+import { FetchStatus } from '../../utils/const';
 import { ReactComponent as IconClock } from '../../assets/img/icon-clock.svg';
 import { ReactComponent as IconPerson } from '../../assets/img/icon-person.svg';
 import { ReactComponent as IconPuzzle } from '../../assets/img/icon-puzzle.svg';

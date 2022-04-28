@@ -6,10 +6,10 @@ import {
 import { AxiosInstance } from 'axios';
 
 import { selectFilterType } from '../app-slice/app-slice';
-import { handleError } from 'src/services/handle-error';
+import { handleError } from '../../services/handle-error';
 
-import { Quest } from 'src/types/quest';
-import { Order } from 'src/types/order';
+import { Quest } from '../../types/quest';
+import { Order } from '../../types/order';
 import { State, AppDispatch } from '../../types/state';
 import {
   NameSpace,

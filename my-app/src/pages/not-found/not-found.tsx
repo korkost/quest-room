@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { MainLayout } from 'src/components/common/common';
+import { MainLayout } from '../../components/common/common';
 
 import * as S from './not-found.styled';
 

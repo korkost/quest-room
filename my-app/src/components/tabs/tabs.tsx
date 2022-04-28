@@ -3,9 +3,9 @@ import {
   currentFilterType,
 } from '../../store/app-slice/app-slice';
 
-import { useAppDispatch, useAppSelector } from 'src/hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 
-import { genres } from 'src/utils/const';
+import { genres } from '../../utils/const';
 
 import * as S from './tabs.styled';
 

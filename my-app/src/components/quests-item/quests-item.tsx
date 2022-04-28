@@ -1,7 +1,7 @@
 import { generatePath } from 'react-router-dom';
 
-import { Quest } from 'src/types/quest';
-import { adaptLevelNameForClient } from 'src/utils/utils';
+import { Quest } from '../../types/quest';
+import { adaptLevelNameForClient } from '../../utils/utils';
 import { ReactComponent as IconPerson } from '../../assets/img/icon-person.svg';
 import { ReactComponent as IconPuzzle } from '../../assets/img/icon-puzzle.svg';
 import * as S from './quests-item.styled';

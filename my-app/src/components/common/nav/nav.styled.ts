@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Navigation = styled.nav``;
 
-const Links = styles.ul`
+const Links = styled.ul`
 display: fkex;
 flex-wrap: wrap;
 align-items: flex-start;

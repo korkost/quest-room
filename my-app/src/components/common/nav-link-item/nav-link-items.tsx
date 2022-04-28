@@ -1,6 +1,6 @@
-import { useAppDispatch, useAppSelector } from 'src/hooks/hooks';
-import { currentPage, selectCurrentPage } from 'src/store/app-slice/app-slice';
-import { menuLinks } from 'src/utils/const';
+import { useAppDispatch, useAppSelector } from '../../../hooks/hooks';
+import { currentPage, selectCurrentPage } from '../../../store/app-slice/app-slice';
+import { menuLinks } from '../../../utils/const';
 import * as S from './nav-link-items.styled';
 
 const NavLinkItems = () => {

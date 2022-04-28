@@ -6,7 +6,7 @@ import {
 } from 'react';
 import { toast } from 'react-toastify';
 
-import { useAppDispatch, useAppSelector } from 'src/hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import {
   changeOrderStatus,
   selectSendOrderStatus,
@@ -15,9 +15,9 @@ import {
 import {
   changePopupCondition,
   selectChangePopupСondition,
-} from 'src/store/app-slice/app-slice';
+} from '../../store/app-slice/app-slice';
 
-import { FetchStatus } from 'src/utils/const';
+import { FetchStatus } from '../../utils/const';
 
 import * as S from './quest-modal.styled';
 import { ReactComponent as IconClose } from '../../assets/img/icon-close.svg';
