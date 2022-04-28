@@ -2,7 +2,10 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import NotFound from '../not-found/not-found';
-import { useAppDispatch, useAppSelector } from 'src/hooks/hooks';
+import {
+  useAppDispatch,
+  useAppSelector
+} from 'src/hooks/hooks';
 import QuestModal from '../../components/quest-modal/quest-modal';
 import { MainLayout } from '../../components/common/common';
 import {
