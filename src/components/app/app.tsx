@@ -1,32 +1,40 @@
-import { ThemeProvider } from 'styled-components';
-import {
-  Switch,
-  Route,
-  BrowserRouter as Router,
-} from 'components/common/common';
-import DetailedQuest from 'components/detailed-quest/detailed-quest';
-import Contacts from 'components/contacts/contacts';
-import Home from 'components/home/home';
+import { lazy, Suspense } from 'react';
+
+import Spinner from '../common/spinner/spinner';
+import { Routes, Route } from '../common/common';
 import { appTheme } from './common';
+import { ThemeProvider } from 'styled-components';
+
+import { AppRoute } from '../../utils/const';
+
+import { Loader } from '../common/spinner/spinner.styled';
 import * as S from './app.styled';
 
+const Home = lazy(() => import('../../pages/home/home'));
+const DetailedQuest = lazy(
+  () => import('../../pages/detailed-quest/detailed-quest'),
+);
+const Contacts = lazy(() => import('../../pages/contacts/contacts'));
+const NotFound = lazy(() => import('../../pages/not-found/not-found'));
+
 const App = () => (
-  <ThemeProvider theme={appTheme}>
-    <S.GlobalStyle />
-    <Router>
-      <Switch>
-        <Route exact path="/quest">
-          <DetailedQuest />
-        </Route>
-        <Route exact path="/contacts">
-          <Contacts />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  </ThemeProvider>
+  <Suspense
+    fallback={
+      <Spinner>
+        <Loader />
+      </Spinner>
+    }
+  >
+    <ThemeProvider theme={appTheme}>
+      <S.GlobalStyle />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path={`${AppRoute.Quest}/:id`} element={<DetailedQuest />} />
+        <Route path={AppRoute.Contacts} element={<Contacts />} />
+        <Route path={AppRoute.NotFound} element={<NotFound />} />
+      </Routes>
+    </ThemeProvider>
+  </Suspense>
 );
 
 export default App;
