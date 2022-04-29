@@ -1,10 +1,10 @@
+import { toast } from 'react-toastify';
 import {
   ChangeEvent,
   FormEvent,
   useEffect,
   useState
 } from 'react';
-import { toast } from 'react-toastify';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import {

@@ -1,7 +1,7 @@
-import React from 'react';
-import { createRoot } from 'react-dom';
-import { Provider } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
 
 import App from './components/app/app';
 import HistoryRouter from './components/history-router/history-route';
